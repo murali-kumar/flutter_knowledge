@@ -1,2 +1,2 @@
- *.c++ linguist-detectable=false
-*.c++ linguist-vendored
+ *.C++ linguist-detectable=false
+*.C++ linguist-vendored
