@@ -16,11 +16,14 @@ class LocalBloc {
     if (langIndex >= supportList.length) {
       return false;
     }
+
+    if (_activeLocal.isClosed) {
+      return false;
+    }
     Locale userLang = supportList[langIndex];
     if (_activeLocal.value == userLang) {
       return true;
     }
-
     _activeLocal.sink.add(userLang);
     return true;
   }
